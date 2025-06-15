@@ -1,0 +1,88 @@
+.form {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form img {
+  width: 800px;
+}
+
+.form_icon {
+  background-image: url("../../assets/img/form.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 15px;
+}
+
+.form_icon input {
+  width: 371px;
+  height: 56px;
+  text-align: center;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
+.form_icon input::placeholder {
+  text-align: center;
+}
+
+.form_icon h1:first-child {
+  margin-top: 20px;
+  margin-right: 131px;
+  margin-left: 131px;
+}
+.form_icon button {
+  width: 191px;
+  height: 56px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  margin-bottom: 28px;
+  background: #ffe9d0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.form_icon button:hover {
+  cursor: pointer;
+  background: #797066;
+}
+
+.sort-mobile {
+  display: none;
+}
+
+.form_icon-text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .form_icon-text h1 {
+    font-size: 20px;
+    margin-right: 75px !important;
+    margin-left: 75px !important;
+  }
+  .form_icon-text a {
+    font-size: 9px;
+  }
+
+  .form_icon input {
+    width: 300px;
+    height: 45px;
+  }
+
+  .form_icon button {
+    width: 130px;
+    height: 36px;
+  }
+}

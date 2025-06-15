@@ -1,0 +1,64 @@
+.magazine h1 {
+  font-size: 35px;
+  color: white;
+}
+.magazine button {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #ffe9d0;
+  border-radius: 40px;
+  width: 567px;
+  height: 141px;
+}
+
+.magazine button:hover {
+  cursor: pointer;
+  background: #797066;
+}
+.magazine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.magazine div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+#magazine-mobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .magazine h1 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+  }
+  .magazine div {
+    gap: 0px;
+  }
+  .magazine button {
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #ffe9d0;
+    border-radius: 40px;
+    width: 200px;
+    height: 50px;
+  }
+  .magazine {
+    flex-direction: column;
+  }
+  .magazine img {
+    width: 250px;
+  }
+  #magazine-mobile {
+    display: block;
+  }
+  #magazine-pc {
+    display: none;
+  }
+}
